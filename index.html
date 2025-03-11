@@ -182,12 +182,16 @@ h2,h3 {text-shadow:
 
 <section id="contact">
    <h2>Contact Me 📧</h2>
-   <form action="#">
-       <input type="text" placeholder="Your Name" required />
-       <input type="email" placeholder="Your Email" required />
-       <textarea placeholder="Your Message" required></textarea>
-       <button type="submit">Send Message 🚀</button>
-   </form>
+   <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<script src="https://web3forms.com/form.js"></script>
+
 </section>
 
 <footer>&copy; NVR | All rights reserved.</footer>
