@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkat Rao Navuluri | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  display: flex; justify-content: center; list-style: none;
+}
+
+nav ul li a {
+  color: #fff; text-decoration: none; margin: 0 15px; font-weight:600;
+}
+
+nav ul li a:hover {
+  color:#00eaff; text-shadow:0 0 8px #00ffff;
+}
+
+.hero {
+  height:50vh; /* reduced height */
+  background:url('https://images.pexels.com/photos/2008145/pexels-photo-2008145.jpeg') no-repeat center center/cover;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+}
+
+.hero h1 {
+  font-size:3rem;color:#ffffff;text-shadow:
+    2px 2px 4px rgba(0,0,0,0.7),
+    0px 0px 10px #00ffff,
+    0px 0px 20px #00ffff;
+}
+
+section {
+  max-width:900px;margin:auto;padding:50px20px;text-align:center;background-color:rgba(255,255,255,.05);border-radius:15px;margin-bottom:20px;border:.5px solid rgba(255,255,255,.2);backdrop-filter:
+blur(10px);
+}
+
+.about-container img{
+ width:150px;height:150px;border-radius:50%;box-shadow:
+   0 0 15px #00ffff;margin-bottom:.8rem
+}
+
+.project{
+   background-color:rgba(255,255,255,.05);padding:.8rem;border-radius:.8rem;margin-bottom:.8rem;text-align:left
+}
+
+/* Removed bullet dots */
+.skills-list{
+   display:flex;justify-content:center;flex-wrap:wrap;margin-top:.8rem;list-style:none
+}
+.skills-list li{
+   background:#00ffff;color:#000;padding:.5rem1rem;margin:.4rem;border-radius:.8rem;font-weight:bold
+}
+
+/* Social links - circular square icons */
+.social-links{
+   display:flex;justify-content:center;margin-top:.8rem
+}
+.social-links a{
+   color:#00ffff;width:45px;height:45px;margin:.4rem;border-radius:
+   10px; /* circular square */
+   display:inline-flex;align-items:center;justify-content:center;font-size:
+   22px;text-decoration:none;border:
+   solid2px#00ffff;transition:
+   .3s ease-in-out;}
+.social-links a:hover{background:#00ffff;color:#000;}
+
+form input[type=text],form input[type=email],form textarea{
+   width:
+   100%;padding:
+   .75rem;border-radius:
+   .5rem;border:none;margin-bottom:
+   .75rem;background-color:#fff;color:#000;}
+form textarea{resize:none;height:
+120px;}
+button{
+   background:#00ffff;color:#000;padding:.75rem1.5rem;border-radius:
+   .5rem;border:none;font-weight:bold;cursor:pointer;}
+button:hover{background-color:#fff;}
+
+footer{text-align:center;padding:.75rem;background-color:#000;color:white;font-size:.85em;}
+
+@media(max-width:768px){
+   nav ul{flex-direction:column;}
+   .hero h1{font-size:2.5rem;}
+   section{padding:30px15px;}
+}
+
+/* Neon Glow Animations */
+@keyframes fadeInUp{
+    from{opacity:
+    0;transform:
+    translateY(30px)}
+    to{opacity:
+    1;transform:
+    translateY(0)}
+}
+section,h1,h2,h3,p,img,.skills-list li,.project,.social-links a{
+    animation-name:
+    fadeInUp;animation-duration:
+    .8s}
+
+/* Neon glow effect for headings */
+h2,h3 {text-shadow:
+    0 0 10px #00ffff;}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<ul>
+   <li><a href="#about">About</a></li>
+   <li><a href="#projects">Projects</a></li>
+   <li><a href="#skills">Skills</a></li>
+   <li><a href="#links">Find Me</a></li>
+   <li><a href="#contact">Contact</a></li>
+ </ul>
+</nav>
+</header>
+
+<div class="hero">
+<h1 style="color: black;">Welcome || Bienvenue</h1>
+</div>
+
+<section id="about">
+   <h2>About Me</h2>
+   <div class="about-container">
+     <img src="https://drive.google.com/uc?export=view&id=1yvp5lqSJDQZxlM-mp0ooSAuiz6KvYjbF" alt="Venkat Rao Navuluri">
+       <p>Hello! I'm Venkat Rao Navuluri, pursuing my Master's in Software Engineering at ISEP Paris. I specialize in frontend web development and data analytics—crafting intuitive interfaces and insightful data visualizations. I'm also an aspiring author currently working on my first book.</p>
+   </div>
+</section>
+
+<section id="projects">
+   <h2>Projects</h2>
+   <div class="project">
+       <h3>Weather App 🌦️</h3>
+       <p>A web application displaying current weather conditions using WeatherAPI.</p>
+   </div>
+   <div class="project">
+       <h3>My ToDo List</h3>
+       <p>A web application that reflects my skills in JavaScript.</p>
+   </div>
+</section>
+
+<section id="skills">
+   <h2>Skills 🛠️</h2>
+   <ul class="skills-list">
+       <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Power BI</li><li>Microsoft Excel</li><li>SQL</li><li>DAX</li>
+     <li>python</li>
+   </ul>
+</section>
+
+<section id="links">
+   <h2>Find Me On 🌐</h2>
+   <div class="social-links">
+       <a href="#"><i class="fab fa-linkedin"></i></a>
+       <a href="https://github.com/pandu7776"><i class="fab fa-github"></i></a>
+       <a href="https://www.instagram.com/nvr7776"><i class="fab fa-instagram"></i></a>
+   </div>
+</section>
+
+<section id="contact">
+   <h2>Contact Me 📧</h2>
+   <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="554cd3ed-f786-4c62-b0cd-4771441d3bb5">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message 🚀</button>
+</form>
+
+<script src="https://web3forms.com/form.js"></script>
+
+</section>
+
+<footer>&copy; NVR | All rights reserved.</footer>
+
+<script>
+// Smooth scrolling
+document.querySelectorAll('nav a').forEach(anchor => {
+ anchor.addEventListener('click', function(e){
+ e.preventDefault();
+ document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+ });
+});
+</script>
